@@ -4,9 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>ROBO — Meme Robot Revolution</title>
-  <meta name="description" content="ROBO ($ROBO) — a clean, fast, community-first meme token. No promises, just vibes." />
+  <meta name="description" content="ROBO ($ROBO) — clean, fast, community-first meme token. No promises, just vibes." />
   <meta name="theme-color" content="#00aaff" />
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='16' fill='%2300aaff'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -17,23 +18,23 @@
         <span class="brand-mark"></span>
         <b>ROBO</b>
       </a>
-      <div class="menu">
-        <a href="#about">About</a>
-        <a href="#how">How to Buy</a>
-        <a href="#roadmap">Roadmap</a>
-        <a href="#community">Community</a>
-        <a class="cta" href="#buy">Buy $ROBO</a>
+      <div class="menu" id="menu-desktop">
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#how">How to Buy</a>
+        <a class="nav-link" href="#roadmap">Roadmap</a>
+        <a class="nav-link" href="#community">Community</a>
+        <a class="cta" id="buy" href="#" target="_blank" rel="noopener">Buy $ROBO</a>
       </div>
-      <input id="nav-toggle" type="checkbox" />
-      <label class="hamb" for="nav-toggle" aria-label="Toggle menu"><span class="bar"></span></label>
+      <input id="nav-toggle" type="checkbox" aria-label="Toggle menu"/>
+      <label class="hamb" for="nav-toggle" aria-label="Open menu"><span class="bar"></span></label>
     </div>
     <div class="menu-mobile">
       <div class="panel container">
-        <a href="#about" onclick="navOff()">About</a>
-        <a href="#how" onclick="navOff()">How to Buy</a>
-        <a href="#roadmap" onclick="navOff()">Roadmap</a>
-        <a href="#community" onclick="navOff()">Community</a>
-        <a href="#buy" onclick="navOff()">Buy $ROBO</a>
+        <a class="nav-link" href="#about" onclick="navOff()">About</a>
+        <a class="nav-link" href="#how" onclick="navOff()">How to Buy</a>
+        <a class="nav-link" href="#roadmap" onclick="navOff()">Roadmap</a>
+        <a class="nav-link" href="#community" onclick="navOff()">Community</a>
+        <a class="cta" href="#" target="_blank" rel="noopener" onclick="navOff()">Buy $ROBO</a>
       </div>
     </div>
   </nav>
@@ -47,27 +48,28 @@
         <h1 class="title">A friendly robot bringing <span class="gradient">memes, vibes, and innovation</span> to crypto.</h1>
         <p class="lead">Community-driven, simple and transparent. No hypey promises — just consistent delivery, clean design, and good energy.</p>
         <div class="actions">
-          <a class="cta" id="buy" href="#" target="_blank" rel="noopener">Buy on DEX</a>
+          <a class="cta" href="#" target="_blank" rel="noopener">Buy on DEX</a>
           <a class="ghost" href="#community">Join Telegram</a>
         </div>
       </div>
 
-      <div class="hero-card reveal">
+      <aside class="hero-card reveal" aria-label="Why ROBO">
         <h3>Why ROBO?</h3>
         <ul class="ticks">
           <li>Clean brand & fast website</li>
           <li>Fair, community-first approach</li>
           <li>Transparent updates</li>
         </ul>
-      </div>
+      </aside>
     </div>
   </header>
 
   <!-- ABOUT -->
   <section id="about" class="sect container">
+    <h2 class="subtitle">About</h2>
     <div class="grid">
       <div class="card reveal">
-        <h3>About</h3>
+        <h3>Essence</h3>
         <p>ROBO embraces internet culture with a sleek tech identity. Built for fun and community engagement. Keep it light, keep it fair.</p>
       </div>
       <div class="card reveal">
@@ -84,7 +86,7 @@
   <!-- HOW TO BUY -->
   <section id="how" class="sect container">
     <h2 class="subtitle">How to Buy</h2>
-    <ol class="steps card reveal">
+    <ol class="steps card reveal" aria-label="Steps to buy">
       <li>Install a wallet (e.g., MetaMask / Phantom).</li>
       <li>Add funds of the chain’s native token.</li>
       <li>Open the DEX link and import the $ROBO contract.</li>
