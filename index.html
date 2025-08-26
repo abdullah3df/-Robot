@@ -3,58 +3,33 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>ROBO Coin — Meme Robot Revolution</title>
-  <meta name="description" content="ROBO ($ROBO) — a fun, community-driven meme token led by a friendly robot." />
+  <title>ROBO — Meme Robot Revolution</title>
+  <meta name="description" content="ROBO ($ROBO) — a clean, fast, community-first meme token. No promises, just vibes." />
   <meta name="theme-color" content="#00aaff" />
-  <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- ===== NAV ===== -->
+  <!-- NAV -->
   <nav class="nav">
     <div class="container nav-wrap">
-      <div class="brand">
-        <!-- Inline SVG Logo -->
-        <svg class="robo-logo" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <radialGradient id="g1" cx="50%" cy="40%" r="60%">
-              <stop offset="0%" stop-color="#cfeaff"/>
-              <stop offset="60%" stop-color="#9ac7ff"/>
-              <stop offset="100%" stop-color="#5aa4ff"/>
-            </radialGradient>
-            <linearGradient id="metal" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0%" stop-color="#b9c4cf"/>
-              <stop offset="50%" stop-color="#8b96a4"/>
-              <stop offset="100%" stop-color="#d3dde6"/>
-            </linearGradient>
-          </defs>
-          <rect x="0" y="0" width="256" height="256" rx="56" fill="#1a2430" />
-          <g transform="translate(28,28)">
-            <rect x="0" y="0" width="200" height="200" rx="40" fill="url(#metal)" stroke="#233445" stroke-width="6"/>
-            <rect x="24" y="40" width="152" height="96" rx="30" fill="#0b1520" stroke="#2a3e52" stroke-width="6"/>
-            <circle cx="76" cy="88" r="20" fill="url(#g1)" />
-            <circle cx="124" cy="88" r="20" fill="url(#g1)" />
-            <rect x="84" y="-22" width="32" height="30" rx="8" fill="url(#metal)" stroke="#233445" stroke-width="6"/>
-            <rect x="48" y="152" width="104" height="30" rx="16" fill="#0b1520" stroke="#2a3e52" stroke-width="6"/>
-          </g>
-        </svg>
+      <a href="#home" class="brand">
+        <span class="brand-mark"></span>
         <b>ROBO</b>
-      </div>
+      </a>
       <div class="menu">
         <a href="#about">About</a>
-        <a href="#token">Tokenomics</a>
         <a href="#how">How to Buy</a>
         <a href="#roadmap">Roadmap</a>
         <a href="#community">Community</a>
         <a class="cta" href="#buy">Buy $ROBO</a>
       </div>
       <input id="nav-toggle" type="checkbox" />
-      <label class="hamb" for="nav-toggle"><span class="bar"></span></label>
+      <label class="hamb" for="nav-toggle" aria-label="Toggle menu"><span class="bar"></span></label>
     </div>
     <div class="menu-mobile">
       <div class="panel container">
         <a href="#about" onclick="navOff()">About</a>
-        <a href="#token" onclick="navOff()">Tokenomics</a>
         <a href="#how" onclick="navOff()">How to Buy</a>
         <a href="#roadmap" onclick="navOff()">Roadmap</a>
         <a href="#community" onclick="navOff()">Community</a>
@@ -63,101 +38,100 @@
     </div>
   </nav>
 
-  <!-- ===== HERO ===== -->
+  <!-- HERO -->
   <header class="hero" id="home">
-    <div class="bot-blob"></div>
-    <div class="container">
-      <div>
+    <div class="glow"></div>
+    <div class="container hero-wrap">
+      <div class="copy">
         <span class="pill">🤖 $ROBO • Meme Robot Revolution</span>
         <h1 class="title">A friendly robot bringing <span class="gradient">memes, vibes, and innovation</span> to crypto.</h1>
-        <p class="lead">ROBO is a community-driven meme token with simple tokenomics, transparent vibes, and a bold robot identity. Join us and power up the fun.</p>
+        <p class="lead">Community-driven, simple and transparent. No hypey promises — just consistent delivery, clean design, and good energy.</p>
         <div class="actions">
-          <a class="cta" id="buy" href="#" target="_blank">Buy on DEX</a>
+          <a class="cta" id="buy" href="#" target="_blank" rel="noopener">Buy on DEX</a>
           <a class="ghost" href="#community">Join Telegram</a>
-          <a class="ghost" href="#token">View Tokenomics</a>
         </div>
       </div>
-      <div class="bot-card reveal">
-        <svg class="robo-logo" viewBox="0 0 256 256"></svg>
+
+      <div class="hero-card reveal">
+        <h3>Why ROBO?</h3>
+        <ul class="ticks">
+          <li>Clean brand & fast website</li>
+          <li>Fair, community-first approach</li>
+          <li>Transparent updates</li>
+        </ul>
       </div>
     </div>
   </header>
 
-  <!-- ===== ABOUT ===== -->
+  <!-- ABOUT -->
   <section id="about" class="sect container">
-    <h2 class="title">About ROBO</h2>
-    <p>ROBO celebrates internet culture while embracing a sleek tech identity. Fun, fair, and community-first.</p>
-  </section>
-
-  <!-- ===== TOKENOMICS ===== -->
-  <section id="token" class="sect container">
-    <h2 class="title">Tokenomics</h2>
-    <div class="grid-3">
+    <div class="grid">
       <div class="card reveal">
-        <h3>Total Supply</h3>
-        <p><b>1,000,000,000 $ROBO</b></p>
+        <h3>About</h3>
+        <p>ROBO embraces internet culture with a sleek tech identity. Built for fun and community engagement. Keep it light, keep it fair.</p>
       </div>
       <div class="card reveal">
-        <h3>Allocation</h3>
-        <ul>
-          <li>60% Liquidity</li>
-          <li>25% Community & Airdrops</li>
-          <li>10% Marketing</li>
-          <li>5% Team (Vested)</li>
-        </ul>
+        <h3>Values</h3>
+        <p>Clarity over noise. We focus on community activities, simple mechanics, and transparent communication.</p>
       </div>
       <div class="card reveal">
-        <h3>Taxes</h3>
-        <p>Buy/Sell: 0–2%</p>
-        <p>LP locked • Transparent ownership</p>
+        <h3>Disclaimer</h3>
+        <p>Entertainment project. Crypto is volatile — only invest what you can afford to lose.</p>
       </div>
     </div>
   </section>
 
-  <!-- ===== HOW TO BUY ===== -->
+  <!-- HOW TO BUY -->
   <section id="how" class="sect container">
-    <h2 class="title">How to Buy</h2>
-    <ol class="card reveal">
-      <li>Install a crypto wallet (e.g., MetaMask / Phantom).</li>
-      <li>Fund it with the chain’s native token.</li>
-      <li>Open the DEX and import $ROBO contract.</li>
-      <li>Confirm swap and HODL.</li>
+    <h2 class="subtitle">How to Buy</h2>
+    <ol class="steps card reveal">
+      <li>Install a wallet (e.g., MetaMask / Phantom).</li>
+      <li>Add funds of the chain’s native token.</li>
+      <li>Open the DEX link and import the $ROBO contract.</li>
+      <li>Confirm the swap and you’re in.</li>
     </ol>
   </section>
 
-  <!-- ===== ROADMAP ===== -->
+  <!-- ROADMAP -->
   <section id="roadmap" class="sect container">
-    <h2 class="title">Roadmap</h2>
+    <h2 class="subtitle">Roadmap</h2>
     <div class="road">
       <div class="mile reveal">
-        <div class="bubble"><h3>Phase 1 — Launch</h3><p>Website live, socials open, initial liquidity.</p></div>
+        <div class="bubble"><h4>Phase 1 — Launch</h4><p>Website live, socials open, initial meme push.</p></div>
         <div class="dot"></div>
       </div>
       <div class="mile reveal">
         <div class="dot"></div>
-        <div class="bubble"><h3>Phase 2 — Growth</h3><p>Listings on trackers, community contests, partnerships.</p></div>
+        <div class="bubble"><h4>Phase 2 — Growth</h4><p>Community contests, listings on trackers, collabs.</p></div>
       </div>
       <div class="mile reveal">
-        <div class="bubble"><h3>Phase 3 — Momentum</h3><p>Merch, mini utilities, expanded holders base.</p></div>
+        <div class="bubble"><h4>Phase 3 — Momentum</h4><p>Merch drops, mini utilities, expanding holders.</p></div>
         <div class="dot"></div>
       </div>
     </div>
   </section>
 
-  <!-- ===== COMMUNITY ===== -->
+  <!-- COMMUNITY -->
   <section id="community" class="sect container">
-    <h2 class="title">Community</h2>
-    <div class="grid-3">
-      <a class="card reveal" href="#" target="_blank"><h3>Telegram</h3><p>Live chat & giveaways.</p></a>
-      <a class="card reveal" href="#" target="_blank"><h3>Twitter</h3><p>Memes & updates.</p></a>
-      <a class="card reveal" href="#" target="_blank"><h3>Contract</h3><p>Add your contract address here.</p></a>
+    <h2 class="subtitle">Community</h2>
+    <div class="grid">
+      <a class="card link reveal" href="#" target="_blank" rel="noopener">
+        <h3>Telegram</h3><p>Live chat, announcements & giveaways.</p>
+      </a>
+      <a class="card link reveal" href="#" target="_blank" rel="noopener">
+        <h3>Twitter / X</h3><p>Memes, threads, and updates.</p>
+      </a>
+      <a class="card link reveal" href="#" target="_blank" rel="noopener">
+        <h3>Contract</h3><p>Add your official contract & explorer link.</p>
+      </a>
     </div>
   </section>
 
-  <!-- ===== FOOTER ===== -->
+  <!-- FOOTER -->
   <footer>
-    <div class="container">
-      © <span id="year"></span> ROBO — For fun & entertainment only. Crypto is risky.
+    <div class="container foot">
+      <div>© <span id="year"></span> ROBO. All rights reserved.</div>
+      <div class="muted">For fun & entertainment only. Crypto is risky.</div>
     </div>
   </footer>
 
